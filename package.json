@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "nodemon app.js",
-    "install": "bower install",
+    "install": "node_modules/.bin/bower install"
   },
   "dependencies": {
     "babylonjs": "^3.2.0",
@@ -20,6 +20,7 @@
     "morgan": "~1.9.0",
     "nodemon": "^1.17.4",
     "pg": "^7.4.3",
+    "pg-connection-string": "^2.0.0",
     "pug": "^2.0.0-beta11"
   },
   "main": "app.js",

@@ -1,17 +1,4 @@
-var pg = require('pg');
-
-var config = {
-    user: 'nikitasavelev',
-    database: 'webdb',
-    password: '123321',
-    host: 'localhost',
-    port: 5432,
-    max: 10,
-    min: 3,
-    idleTimeoutMillis: 10000,
-};
-
-var pool = new pg.Pool(config);
+var pool = require("../models/db");
 
 var Image = {
     findAll: function (callback) {
