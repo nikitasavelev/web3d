@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "nodemon app.js",
-    "install": "node_modules/.bin/bower install"
+    "install": "bower install"
   },
   "dependencies": {
     "babylonjs": "^3.2.0",
@@ -25,9 +25,17 @@
   },
   "main": "app.js",
   "devDependencies": {
-    "nodemon": "^1.17.5"
+    "nodemon": "^1.17.4"
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikitasavelev/web3d.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nikitasavelev/web3d/issues"
+  },
+  "homepage": "https://github.com/nikitasavelev/web3d#readme",
   "description": ""
 }
