@@ -1,4 +1,5 @@
 var pg = require('pg');
+var parse = require('pg-connection-string');
 
 var config = require('../../config/database');
 
