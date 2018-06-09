@@ -79,7 +79,7 @@
                     camera.radius = viewRadius;
                     camera.rotation = new BABYLON.Vector3(0, 45, 0);
                     console.log(camera.radius);
-                   /* camera.setPosition(new BABYLON.Vector3(-260, 330, viewRadius));*/
+                    /* camera.setPosition(new BABYLON.Vector3(-260, 330, viewRadius));*/
 
 
                 });
@@ -98,6 +98,22 @@
                 scene.render();
             });
 
+            window.addEventListener("deviceorientation", function (event) {
+
+                var orientation = window.orientation;
+                console.log(orientation);
+                var alphaGrad = event.alpha;// x rotation
+                var betaGrad = event.beta;// hory rotation
+                var gamaGrad = event.gamma;// y rotation
+                var absGrad = event.absolute;// ???
+
+                var alphaRad = alphaGrad * (Math.PI / 180);
+                var betaRad = betaGrad * (Math.PI / 180);
+                var gamaRad = gamaGrad * (Math.PI / 180);
+
+                camera.alpha = alphaRad;
+                camera.beta = betaRad;
+            }, true);
 
             window.addEventListener("resize", function () { // Watch for browser/canvas resize events
                 engine.resize();
