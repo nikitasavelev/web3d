@@ -1,0 +1,21 @@
+# Max2Mtl Version 4.0 Mar 10th, 2001
+#
+newmtl a_01_-_default01
+Ka  0.6 0.6 0.6
+Kd  0.6 0.6 0.6
+Ks  1.0 1.0 1.0
+d  1.0
+Ns  3.4
+illum 2
+map_Kd masterchief_base.tif
+#
+newmtl a_01_-_default01
+Ka  0.6 0.6 0.6
+Kd  0.6 0.6 0.6
+Ks  0.9 0.9 0.9
+d  1.0
+Ns  6.9
+illum 2
+map_Kd mp_cobra.tga
+#
+# EOF

@@ -1,0 +1,146 @@
+html
+{
+min-width: 1280px;
+font-family: 'Conv_Peace Sans Webfont';
+
+}
+
+body
+{
+
+min-width: 1280px;
+
+background: #000;
+font-size: 18px;
+color: white;
+
+font-family: 'Conv_Peace Sans Webfont';
+
+}
+
+a
+{
+	text-decoration: none;
+	color: #ffffff
+}
+
+.wrapper
+{
+
+	width: 1280px;
+	height: 160px;
+	margin: 0 auto;
+	background: #141414
+
+}
+.wrapper2
+{
+	width: 1280px;
+	min-height: 1200px;
+	margin: 0 auto;
+	background: #1A1A1A;
+
+}
+
+.wrapper3
+{
+	width: 1280px;
+	height: 50px;
+
+	margin: 0 auto;
+
+	background: #101010
+
+
+}
+
+
+.logo img
+{
+	width: 40px;
+	height: 110px;
+
+	margin-left: 40px;
+	margin-top: 20px;
+	float: left;
+
+
+}
+.logo2 img
+{
+	width: 130px;
+	height: 50px;
+
+	margin-left: 0px;
+	margin-top: 65px;
+	float: left;
+
+
+}
+.mainMenu
+{
+float: left;
+
+margin-left: 250px;
+margin-top: 80px;
+}
+.mainMenu ul li
+{
+	display: inline-block;
+	font-size: 18px;
+	float: left;
+	margin-right: 50px; 
+	cursor: pointer;
+}
+
+.phoneHead
+{
+	float: left;
+	margin-left: 170px;
+	margin-top: 70px;
+
+}
+.phone
+{
+	margin-top: 10px;
+
+}
+.about
+{
+
+	float: left;
+
+}
+
+.about ul li
+{
+	font-size: 32px;
+	margin-left: 550px;
+	margin-top: 40px;
+
+}
+
+.catalog img
+{
+
+margin-top: 60px;
+margin-left: 63px;
+height: 330px;
+width: 330px;
+
+}
+
+.policy
+{
+	float: left;
+
+}
+
+.policy ul li
+{	
+	position: relative;
+	margin-top: 8px;
+	margin-left: 480px;
+ 	color: #888888;
+
+}
