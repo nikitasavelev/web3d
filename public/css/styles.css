@@ -54,37 +54,33 @@
 .container-fluid {
     background: #101010;
     color: #fdfdfe;
-    height: 100%;
 }
 
 .middle {
     background: #101010;
     margin: 0 auto;
-    height: 100%;
 }
 
-/*html{
-    height: 100%;
-}*/
-
+html {
+    background:#101010;
+}
 body {
-    margin: 0;
-    height: 100%;
+    background: #34ce57;
 }
-
 .main_body {
-
     background: #000000;
     color: #fdfdfe;
-    height: 96%;
 }
 
 .footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:20px;   /* Height of the footer */
     margin: 0 auto;
     background: #000000;
     color: #fdfdfe;
     min-height: 30px;
-
 }
 
 .homepage ul li {
