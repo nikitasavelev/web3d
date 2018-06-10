@@ -5,7 +5,8 @@ var modelsController = {
 
     index: function (req, res) {
         var keyword = req.query.keyword;
-
+        var imagelogo = '/images/Logo.png';
+        var imagelogo2 = '/images/Barbariarts.png';
         Image.search(keyword, function (err, images) {
 
             var text;
@@ -15,18 +16,21 @@ var modelsController = {
             } else {
                 text = "Поиск по запросу " + JSON.stringify(req.query.keyword);
             }
-
             res.render('models/index', {
                 title: text,
                 message: text,
                 images: images,
-                isNoResults: images.length === 0
+                isNoResults: images.length === 0,
+                logoImage: imagelogo,
+                logoImage2: imagelogo2
             });
         });
     },
     show: function (req, res) {
         var image;
         var shet = req.params.id;
+        var imagelogo = '/images/Logo.png';
+        var imagelogo2 = '/images/Barbariarts.png';
 
         Image.findAll(function (err, images) {
 
@@ -44,6 +48,8 @@ var modelsController = {
                 title: 'Модель',
                 message: 'Model ' + shet,
                 image: image,
+                logoImage: imagelogo,
+                logoImage2: imagelogo2
             });
         });
 

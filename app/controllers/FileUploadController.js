@@ -13,21 +13,21 @@ var fileUploadController = {
             console.log(files.fileMtl.name);
 
             var oldpath = files.img.path;
-            var newpath = '/Volumes/TRASH/3dweb-3js 2/public/images/' + files.img.name;
+            var newpath = '/Volumes/TRASH/web3d/public/images/' + files.img.name;
             fs.createReadStream(oldpath).pipe(fs.createWriteStream(newpath));
             /*fs.rename(oldpath, newpath, function (err) {
                 if (err) throw err;
             });*/
 
             var oldpath = files.fileObj.path;
-            var newpath = '/Volumes/TRASH/3dweb-3js 2/public/models/' + files.fileObj.name;
+            var newpath = '/Volumes/TRASH/web3d/public/models/' + files.fileObj.name;
             fs.createReadStream(oldpath).pipe(fs.createWriteStream(newpath));
             /*fs.rename(oldpath, newpath, function (err) {
                 if (err) throw err;
             });*/
 
             var oldpath = files.fileMtl.path;
-            var newpath = '/Volumes/TRASH/3dweb-3js 2/public/models/' + files.fileMtl.name;
+            var newpath = '/Volumes/TRASH/web3d/public/models/' + files.fileMtl.name;
             fs.createReadStream(oldpath).pipe(fs.createWriteStream(newpath));
             /*fs.rename(oldpath, newpath, function (err) {
                 if (err) throw err;
@@ -35,10 +35,14 @@ var fileUploadController = {
             Upload.post(fields.keywords,'/images/'+ files.img.name ,files.fileObj.name);
         });
 
+        var imagelogo = '/images/Logo.png';
+        var imagelogo2 = '/images/Barbariarts.png';
         res.render('fileupload/index', {
             title: 'Success',
             message: 'BarbariArts',
             page: 'index',
+            logoImage: imagelogo,
+            logoImage2: imagelogo2,
         });
 
 
