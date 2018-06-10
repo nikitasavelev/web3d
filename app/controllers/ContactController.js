@@ -9,7 +9,7 @@ var contactController = {
         var imagelogo2 = '/images/Barbariarts.png';
         res.render('contact/index', {
             title: 'Контакт',
-            message: 'Оставьте ваши пожелания здесь',
+            message: 'Оставьте ваши контакты здесь',
             logoImage: imagelogo,
             logoImage2: imagelogo2
         });
